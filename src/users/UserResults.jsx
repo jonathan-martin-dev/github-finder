@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Spinner from '../components/layout/Spinner'
 
 const UserResults = () => {
     const [users, setUsers] = useState([])
@@ -34,7 +35,7 @@ const UserResults = () => {
         )
         // eslint-disable-next-line no-else-return
     } else {
-        return <h3>Loading ...</h3>
+        return <Spinner />
     }
 }
 
