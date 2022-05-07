@@ -14,6 +14,7 @@ const UserSearch = () => {
         e.preventDefault()
 
         if (text === '') {
+            // eslint-disable-next-line no-alert
             alert('Please enter something')
         } else {
             searchUsers(text)
